@@ -28,13 +28,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Deploy on firebase :
+## Deploy on firebase
 
 ## Create an account in firebase
+
 https://firebase.google.com/
 
 
 ## Create a project in firebase
+
 my-angular-project
 
 Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
@@ -43,29 +45,9 @@ Run `firebase login` to login from your account.
 
 Run `ng build --prod` it will create dist folder
 
-Run `firebase init` to intialize firebase, following will print
+Run `firebase init` to intialize firebase
 
-######## #### ######## ######## ######## ### ###### ######## ## ## ## ## ## ## ## ## ## ## ## ###### ## ######## ###### ######## ######### ###### ###### ## ## ## ## ## ## ## ## ## ## ## ## #### ## ## ######## ######## ## ## ###### ########
-
-You're about to initialize a Firebase project in this directory:
-
-/Angular_FireBase
-
-Before we get started, keep in mind:
-
-- You are currently outside your home directory
-- You are initializing in an existing Firebase project directory
-
-? Which Firebase CLI features do you want to set up for this folder? Press Space to select features, then Enter to confirm your choic
-es. (Press <space> to select, <a> to toggle all, <i> to invert selection)
-
-◉ Database: Deploy Firebase Realtime Database Rules
-◉ Firestore: Deploy rules and create indexes for Firestore
-◉ Functions: Configure and deploy Cloud Functions
-◉ Hosting: Configure and deploy Firebase Hosting sites
-◉ Storage: Deploy Cloud Storage security rules
-
-## Continue....
+## Continue with default settings 
 
 ## Most of the entries are default just make sure following selections aboout public directory and index html:
 
