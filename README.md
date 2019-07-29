@@ -30,9 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploy on firebase :
 
-Create an account in firebase
+## Create an account in firebase
 
-Create a project in firebase
+## Create a project in firebase
 
 Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
 
@@ -62,19 +62,19 @@ es. (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ◉ Hosting: Configure and deploy Firebase Hosting sites
 ❯◉ Storage: Deploy Cloud Storage security rules
 
-Continue....
+## Continue....
 
-##Most of the entries are default just make sure following selections aboout public directory and index html:
+## Most of the entries are default just make sure following selections aboout public directory and index html:
 
 select your public directory as :
 ? What do you want to use as your public directory? dist/my-stream-project
 
-##No need to Override index.html
+## No need to Override index.html
 Configure as a single-page app (rewrite all urls to /index.html)? N
 
 Run `firebase deploy` to deploy
 
-##If we get following error
+## If we get following error
 
 Found 1 error.
 
@@ -83,11 +83,11 @@ npm ERR! errno 2
 npm ERR! functions@ build: `tsc`
 npm ERR! Exit status 2
 
-##then remove `build` from firebase.json in following line :
+## then remove `build` from firebase.json in following line :
 
 "npm --prefix \"\$RESOURCE_DIR\" run build"
 
-##It should be
+## It should be
 
 npm --prefix \"\$RESOURCE_DIR\" run
 
@@ -96,7 +96,7 @@ npm --prefix \"\$RESOURCE_DIR\" run
 Project Console: https://console.firebase.google.com/project/my-angular-project-1bde8/overview
 Hosting URL: https://my-angular-project-1bde8.firebaseapp.com
 
-Hit and open the app, we are done :)
+## Hit and open the app, we are done :)
 
 #####\***\*\*\*\***NOTE\***\*\*\*\*\***########
 
