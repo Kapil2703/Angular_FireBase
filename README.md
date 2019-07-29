@@ -31,8 +31,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy on firebase :
 
 ## Create an account in firebase
+https://firebase.google.com/
+
 
 ## Create a project in firebase
+my-angular-project
 
 Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
 
@@ -60,7 +63,7 @@ es. (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ◉ Firestore: Deploy rules and create indexes for Firestore
 ◉ Functions: Configure and deploy Cloud Functions
 ◉ Hosting: Configure and deploy Firebase Hosting sites
-❯◉ Storage: Deploy Cloud Storage security rules
+◉ Storage: Deploy Cloud Storage security rules
 
 ## Continue....
 
