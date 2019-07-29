@@ -94,7 +94,7 @@ Pointing to dist folder like "outDir": "./dist",
 
 Run `ng build --prod`
 
-## Afer Build 
+## After Build to Deploy the Changes
 
 Run `firebase deploy` 
 
