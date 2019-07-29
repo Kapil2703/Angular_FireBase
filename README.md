@@ -39,6 +39,8 @@ https://firebase.google.com/
 
 my-angular-project
 
+## Run following in Terminal in your project directory 
+
 Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
 
 Run `firebase login` to login from your account.
@@ -47,7 +49,7 @@ Run `ng build --prod` it will create dist folder
 
 Run `firebase init` to intialize firebase
 
-## Continue with default settings 
+Continue with default settings most the places.......
 
 ## Most of the entries are default just make sure following selections aboout public directory and index html:
 
@@ -83,8 +85,18 @@ Hosting URL: https://my-angular-project-1bde8.firebaseapp.com
 
 ## Hit and open the app, we are done :)
 
-#####\***\*\*\*\***NOTE\***\*\*\*\*\***########
+## #####\***\*\*\*\***NOTE\***\*\*\*\*\***########
 
-## in case static contents are not loading then check your tsconfig.json's output directory it should be
+In case static contents are not loading then check your tsconfig.json's output directory it should be
+Pointing to dist folder like "outDir": "./dist",
 
-##Pointing to dist folder like "outDir": "./dist",
+## Once done just run following after change in your code to deploy.
+
+Run `ng build --prod`
+
+## Afer Build 
+
+Run `firebase deploy` 
+
+
+
