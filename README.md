@@ -51,7 +51,7 @@ Run `firebase init` to intialize firebase
 
 Continue with default settings most the places.......
 
-## Most of the entries are default just make sure following selections aboout public directory and index html:
+## Most of the entries are default just make sure following selections about public directory and index html:
 
 select your public directory as :
 ? What do you want to use as your public directory? dist/my-stream-project
