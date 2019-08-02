@@ -77,13 +77,14 @@ npm ERR! Exit status 2
 ## It should be
 
 npm --prefix \"\$RESOURCE_DIR\" run
+Re-Run `firebase deploy`
 
-## Fiinal outout will show the published URL as below :
+## Once sucessfull, Final outout will show the published URL as below :
 
 Project Console: https://console.firebase.google.com/project/my-angular-project-1bde8/overview
 Hosting URL: https://my-angular-project-1bde8.firebaseapp.com
 
-## Hit and open the app, we are done :)
+## Hit and open the app and it site if open then we are done :)
 
 ## #####\***\*\*\*\***NOTE\***\*\*\*\*\***########
 
@@ -96,7 +97,7 @@ Run `ng build --prod`
 
 ## After Build to Deploy the Changes
 
-Run `firebase deploy` 
+Re-Run `firebase deploy` 
 
 
 
