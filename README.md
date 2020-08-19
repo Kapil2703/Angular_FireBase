@@ -40,7 +40,7 @@ my-angular-project
 
 ## Run following in Terminal in your project directory
 
-Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
+Run `npm install -g firebase-tools` or `yarn add firebase-tools --dev` if yoouu are using yarn to Install the firebase-tools CLI that will handle your deployment
 
 Run `firebase login` to login from your account. (kapilaws273@gmail.com)
 

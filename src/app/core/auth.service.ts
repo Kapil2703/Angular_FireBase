@@ -1,15 +1,15 @@
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import { Injectable } from "@angular/core";
+import { Router } from "@angular/router";
 
-import { auth } from 'firebase/app';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from "firebase/app";
+import { AngularFireAuth } from "@angular/fire/auth";
 import {
   AngularFirestore,
-  AngularFirestoreDocument
-} from '@angular/fire/firestore';
+  AngularFirestoreDocument,
+} from "@angular/fire/firestore";
 
-import { Observable, of } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { Observable, of } from "rxjs";
+import { switchMap } from "rxjs/operators";
 
 interface User {
   uid: string;
@@ -20,7 +20,7 @@ interface User {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class AuthService {
   user: Observable<User>;
@@ -32,7 +32,7 @@ export class AuthService {
   ) {
     //// Get auth data, then get firestore user document || null
     this.user = this.afAuth.authState.pipe(
-      switchMap(user => {
+      switchMap((user) => {
         if (user) {
           return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
         } else {
@@ -48,7 +48,7 @@ export class AuthService {
   }
 
   private oAuthLogin(provider) {
-    return this.afAuth.auth.signInWithPopup(provider).then(credential => {
+    return this.afAuth.signInWithPopup(provider).then((credential) => {
       this.updateUserData(credential.user);
     });
   }
@@ -64,15 +64,15 @@ export class AuthService {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
-      photoURL: user.photoURL
+      photoURL: user.photoURL,
     };
 
     return userRef.set(data, { merge: true });
   }
 
   signOut() {
-    this.afAuth.auth.signOut().then(() => {
-      this.router.navigate(['/']);
+    this.afAuth.signOut().then(() => {
+      this.router.navigate(["/"]);
     });
   }
 }
