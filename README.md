@@ -34,16 +34,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://firebase.google.com/
 
-
 ## Create a project in firebase
 
 my-angular-project
 
-## Run following in Terminal in your project directory 
+## Run following in Terminal in your project directory
 
-Run `npm install -g firebase-tools` Install the firebase-tools CLI that will handle your deployment
+Run `npm install -g firebase-tools` or `yarn add firebase-tools --dev` if yoouu are using yarn to Install the firebase-tools CLI that will handle your deployment
 
-Run `firebase login` to login from your account.
+Run `firebase login` to login from your account. (kapilaws273@gmail.com)
 
 Run `ng build --prod` it will create dist folder
 
@@ -57,6 +56,7 @@ select your public directory as :
 ? What do you want to use as your public directory? dist/my-stream-project
 
 ## No need to Override index.html
+
 Configure as a single-page app (rewrite all urls to /index.html)? N
 
 Run `firebase deploy` to deploy
@@ -86,7 +86,7 @@ Hosting URL: https://my-angular-project-1bde8.firebaseapp.com
 
 ## Hit and open the app and it site if open then we are done :)
 
-## #####\***\*\*\*\***NOTE\***\*\*\*\*\***########
+## #####\***\*\*\*\***NOTE\***\*\*\*\*\***
 
 In case static contents are not loading then check your tsconfig.json's output directory it should be
 Pointing to dist folder like "outDir": "./dist",
@@ -97,7 +97,36 @@ Run `ng build --prod`
 
 ## After Build to Deploy the Changes
 
+
+Run `firebase deploy`
+
+https://www.djamware.com/post/5a0673c880aca7739224ee21/mean-stack-angular-5-crud-web-application-example
+
+https://github.com/ERS-HCL/notifications
+
+https://medium.com/@hallosushant/push-notifications-and-real-time-notifications-in-web-application-89daeafbfe53
+
+https://realtimeapi.io/getting-started-with-building-realtime-api-infrastructure/
+
+https://docs.spring.io/spring/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/websocket.html
+
+https://github.com/sulthan309/Live-Dashboard-using-Kafka-and-Spring-Websocket
+
+https://realtimeapi.io/hub/iot/
+
+Add Firebase Authentication in your moduel :
+
+https://angularfirebase.com/lessons/google-user-auth-with-firestore-custom-data/
+
 Re-Run `firebase deploy` 
 
 
+https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
 
+Creat a Core moduel :
+
+Step 1: ng g module core
+Step 2 : npm install @angular/fire
+Step 3 : ng g service core/auth
+Step 4 : ng g guard core/auth
+Step 5 : ng g component user-profile
