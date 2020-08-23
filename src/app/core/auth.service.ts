@@ -1,15 +1,15 @@
-import { Injectable } from "@angular/core";
-import { Router } from "@angular/router";
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { auth } from "firebase/app";
-import { AngularFireAuth } from "@angular/fire/auth";
+import { auth } from 'firebase/app';
+import { AngularFireAuth } from '@angular/fire/auth';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
-} from "@angular/fire/firestore";
+} from '@angular/fire/firestore';
 
-import { Observable, of } from "rxjs";
-import { switchMap } from "rxjs/operators";
+import { Observable, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 interface User {
   uid: string;
@@ -20,7 +20,7 @@ interface User {
 }
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class AuthService {
   user: Observable<User>;
@@ -72,7 +72,7 @@ export class AuthService {
 
   signOut() {
     this.afAuth.signOut().then(() => {
-      this.router.navigate(["/"]);
+      this.router.navigate(['/']);
     });
   }
 }

@@ -1,0 +1,14 @@
+k{{ items }}k
+<div *ngIf="items; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>hi
+  <div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.product_name }}</span>
+    <span>{{ item.price | currency }}</span>
+  </div>
+</ng-template>
+  <ng-template #elseBlock
+    >Content to render when condition is false.</ng-template
+  >
+
+
+<app-shipping (notify)="onNotify()"></app-shipping>

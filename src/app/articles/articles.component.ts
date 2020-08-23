@@ -7,6 +7,7 @@ import { EventServiceService } from '../events/event-service.service';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
+  eventService: any;
   constructor() {}
 
   ngOnInit() {
@@ -15,6 +16,6 @@ export class ArticlesComponent implements OnInit {
 
   readNotifications() {
     console.log('Inside Read Notifications');
-    //this.eventService.recieve().then(message => console.log(message));
+    this.eventService.recieve().then(message => console.log(message));
   }
 }

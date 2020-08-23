@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+  label = 'Party Store';
 
-  constructor() { }
+  constructor() {
+    console.log('In top bar cosntrcutor');
+    this.changeName('Store'); // Method
+   }
+
+   changeName (name:string) {
+     this.label = name;
+   }
 
   ngOnInit() {
   }

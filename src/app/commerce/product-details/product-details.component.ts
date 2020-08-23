@@ -11,12 +11,12 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-product;
+product: { product_name: string; price: number; product_description: string; };
   constructor(private route: ActivatedRoute, private cartService: CartService) {
-    
+
    }
 
-   addToCart(product) {
+   addToCart(product: any) {
     window.alert('Your product has been added to the cart!');
     this.cartService.addToCart(product);
   }
